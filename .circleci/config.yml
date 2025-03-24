@@ -6,7 +6,7 @@ jobs:
       - image: mysql:8.0.34
         environment:
           MYSQL_ROOT_PASSWORD: password123
-      - image: mcr.microsoft.com/mssql/server:2017
+      - image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
         environment:
           ACCEPT_EULA: Y
           SA_PASSWORD: password123
