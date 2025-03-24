@@ -1,0 +1,10 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: cimg/base:current
+      - image: mysql:8.0.34
+      - image: mcr.microsoft.com/mssql/server:2017-CU31-GDR2-ubuntu-18.04
+    steps:
+      - checkout
+      - run: echo "hello wowwaaa"
